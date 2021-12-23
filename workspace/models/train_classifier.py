@@ -56,7 +56,7 @@ def build_model():
         'vect__max_df': [0.5]
     }
       
-    cv = GridSearchCV(pipeline, param_grid=parameters, cv = 2, n_jobs = 8 )
+    cv = GridSearchCV(pipeline, param_grid=parameters, cv = 2)
     return cv
 
 
